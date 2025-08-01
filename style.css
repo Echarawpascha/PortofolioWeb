@@ -127,26 +127,65 @@ model-viewer.responsive-model {
 }
 
 /* === About Section === */
-#about {
-  padding: 100px 60px;
+.about-modern-section {
   background-color: #111;
-  color: #f9f9f9;
-  text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  color: #f1f1f1;
+  padding: 100px 20px;
 }
 
-#about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 800px;
+.about-modern-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
+
+.about-modern-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.about-modern-text {
+  max-width: 600px;
+  text-align: justify;
+}
+
+.about-modern-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.about-modern-text p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.about-modern-text .highlight {
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-modern-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-modern-text {
+    text-align: justify;
+  }
+}
+
 
 /* === Skills Section === */
 .skills-section {
@@ -339,7 +378,7 @@ model-viewer.responsive-model {
   }
 
   model-viewer {
-    width: 250px;
+    width: 1250px;
     height: 400px;
   }
 }
