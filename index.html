@@ -8,10 +8,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav>
-    <div class="logo">Echara Pascha</div>
+    <div class="logo">Echara Pascha </div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -20,7 +18,6 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
   <section id="home" class="hero">
     <div class="text-section">
       <h1 class="fade-text animate-on-scroll">Hello, I'm <span style="font-size: 1.2em; color: #000000; font-weight: bold;">Echara Pascha</span></h1>
@@ -30,14 +27,15 @@
         <div class="skill-badge"><span class="icon">⚪</span> Front End</div>
         <div class="skill-badge"><span class="icon">⚪</span>UI/UX</div>
         <div class="skill-badge"><span class="icon">⚪</span>Video Editing</div>
-</div>
+    </div>
     </div>
     <div class="model-section">
   <model-viewer 
     src="id-card-EcharaPascha.compressed.glb" 
     alt="My 3D Model"
     camera-controls 
-    auto-rotate 
+    auto-rotate
+    disable-pan 
     touch-action="pan-y"
     field-of-view="1deg"
     exposure="8"
@@ -48,8 +46,6 @@
   </model-viewer>
 </div>
   </section>
-
-  <!-- Wave divider -->
   <div class="wave-divider">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#111111" fill-opacity="1"
@@ -57,8 +53,6 @@
       </path>
     </svg>
   </div>
-
-  <!-- About -->
   <section id="about" class="about-modern-section animate-on-scroll">
   <div class="about-modern-container">
     <div class="about-modern-image">
@@ -73,40 +67,69 @@
     </div>
   </div>
 </section>
-
-
-  <!-- Skills -->
   <section id="skills" class="skills-section animate-on-scroll">
     <h2 class="fade-text animate-on-scroll">My Skills</h2>
     <div class="skills-grid">
       <div class="skill-card"><img src="ASSETS/Laravel.svg.png" alt="HTML"><p>Laravel</p></div>
-      <div class="skill-card"><img src="ASSETS/Laravel.svg.png" alt="HTML"><p>Html</p></div>
-      <div class="skill-card"><img src="ASSETS/Laravel.svg.png" alt="HTML"><p>CSS</p></div>
-      <div class="skill-card"><img src="ASSETS/Laravel.svg.png" alt="HTML"><p>Javascript</p></div>
+      <div class="skill-card"><img src="ASSETS/HTML.png" alt="HTML"><p>Html</p></div>
+      <div class="skill-card"><img src="ASSETS/CSS.png" alt="HTML"><p>CSS</p></div>
+      <div class="skill-card"><img src="ASSETS/JS.png" alt="HTML"><p>Javascript</p></div>
       <td>
       <div class="skill-card"><img src="ASSETS/FIGMA.png" alt="Figma"><p>Figma</p></div>
       <div class="skill-card"><img src="ASSETS\AE.png" alt="AfterEffects"><p>Adobe After Effects</p></div>
       <div class="skill-card"><img src="ASSETS/PR.png" alt="PremierPro"><p>Adobe Premier Pro</p></div>
-      <div class="skill-card"><img src="images/github.png" alt="GitHub"><p>Adobe Photoshop</p></div>
+      <div class="skill-card"><img src="ASSETS/PS.png" alt="GitHub"><p>Adobe Photoshop</p></div>
       </td>
     </div>
   </section>
 
-  <!-- Projects -->
+  
   <section id="projects" class="projects-section animate-on-scroll">
     <h2 class="fade-text animate-on-scroll">Projects</h2>
     <div class="project-grid">
-      <div class="project-card">
-        <h3 class="fade-text animate-on-scroll">LINKED WEB PORTAL</h3>
-        <p class="fade-text animate-on-scroll fade-delay-1">Web Portal memudahkan mengakses seluruh Sosial Media seorang User</p>
-      </div>
-      <div class="project-card">
-        <h3 class="fade-text animate-on-scroll">Game</h3>
-        <p class="fade-text animate-on-scroll fade-delay-1">Deskripsi singkat tentang project ini.</p>
-      </div>
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="ASSETS/Projects1.png" alt="Project 1" class="project-image">
+            <h3 class="fade-text animate-on-scroll">Portal Web Link-in</h3>
+            <div class="project-badges">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+            </div>
+            <p class="fade-text animate-on-scroll fade-delay-1">
+                Web Portal memudahkan mengakses seluruh Sosial Media seorang User dalam satu tampilan yang simpel dan terhubung.
+            </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="ASSETS/Projects3.png" alt="Project 2" class="project-image">
+            <h3 class="fade-text animate-on-scroll">AQUA EXPLORE : Roblox Game</h3>
+            <div class="project-badges">
+                <span class="badge">Roblox Studio</span>
+                <span class="badge">Lua</span>
+            </div>
+            <p class="fade-text animate-on-scroll fade-delay-1">
+                Game edukasi bertema eksplorasi laut yang mendidik dan seru
+            </p>
+        </div>
+
+                <div class="project-card">
+            <img src="ASSETS/Projects2.png" alt="Project 2" class="project-image">
+            <h3 class="fade-text animate-on-scroll">Motion Videos Editing</h3>
+            <div class="project-badges">
+                <span class="badge">After Effects</span>
+                <span class="badge">Premier Pro</span>
+            </div>
+            <p class="fade-text animate-on-scroll fade-delay-1">
+                Beberapa Hasil Karya saya Dalam beberapa Projek Membuat Bumper/Intro Sebuah Event Menggunakan Software Adobe PremierPro & After Effects
+            </p>
+        </div>
+
     </div>
-  </section>
-  <!-- Wave divider bawah (hitam ke putih) -->
+</section>
+  
 <div class="wave-divider">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#111111" fill-opacity="1"
@@ -152,9 +175,6 @@
     </div>
   </div>
 </footer>
-  <!-- Wave divider bawah (hitam ke putih) -->
-
-  <!-- Scroll Script -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const observer = new IntersectionObserver((entries) => {
