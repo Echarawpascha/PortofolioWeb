@@ -11,6 +11,10 @@ body {
   color: #333;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
