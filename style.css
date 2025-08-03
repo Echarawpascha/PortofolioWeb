@@ -259,7 +259,8 @@ model-viewer.responsive-model {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     overflow: hidden;
-    width: 300px;
+    flex: 1 1 300px;           /* fleksibel + minimal width 300px */
+    max-width: 320px;          /* batas maksimal biar nggak terlalu besar di desktop */
     transition: transform 0.3s ease;
 }
 
@@ -300,6 +301,31 @@ model-viewer.responsive-model {
     padding: 0 15px 15px 15px;
     font-size: 0.9em;
     line-height: 1.4em;
+}
+
+/* Tambahan: responsive di layar HP */
+@media (max-width: 480px) {
+    .project-card {
+        flex: 1 1 90%;
+        max-width: 90%;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    .project-card h3 {
+        font-size: 1em;
+    }
+
+    .project-card p {
+        font-size: 0.85em;
+    }
 }
 
 /* === Contact Section === */
